@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>food project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo img{
+            width: 130px;
+            margin-top: -30px;
+            margin-left: 230px;
+        }
+        .navbar{
+            display: flex;
+        }
+        .link{
+            flex: 1;
+        }
+        .link ul{
+            display: inline;
+        }
+        .link ul li{
+            display: inline-block;
+            font-size: 1.4rem;
+            list-style: none;
+            color: white;
+            padding-left: 140px;
+            padding-right: 60px;
+            margin-top: 35px;
+        }
+        .link ul li::after{
+            content: ' ';
+            width: 0%;
+            height: 2px;
+            background: yellow;
+            display: block;
+            margin: auto;
+            transition: .5s;
+        }
+        .link ul li:hover::after{
+            width: 100%;
+        }
+        .hero{
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(back.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-position: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .btn{
+            margin-right: 30px;
+            margin-top: 30px;
+            cursor: pointer;
+            padding: 10px;
+            font-weight: bold;
+            background: yellow;
+            font-size: 1rem;
+            border: none;
+            box-shadow: 2px 2px 5px white, -2px -2px 5px white;
+        }
+        .btn1{
+            margin-right: 30px;
+            margin-top: 30px;
+            cursor: pointer;
+            padding: 30px;
+            font-weight: bold;
+            background: yellow;
+            font-size: 1.6rem;
+            border: none;
+            
+        }
+        .navbar .btn{
+            float: right;
+        }
+        .title{
+            padding: 100px 240px;
+        }
+        .head{
+            color: white;
+            font-size: 8rem;
+        }
+        span{
+            color: yellow;
+        }
+        .verticalvar{
+            height: 100%;
+            background: #000;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        .search-icon{
+            height: 60px;
+            width: 80px;
+        }
+        .search-icon .fa{
+            margin: 45px 23px;
+            display: block;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .social-icons{
+            height: 400px;
+            width: 80px;
+            background: yellow;
+            text-align: center;
+            padding-top: 27%;
+            bottom: 0;
+            position: absolute;
+        }
+        .social-icons .fa{
+            margin: 15px 16px;
+            display: block;
+            padding: 8px;
+            font-size: 2rem;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .notification{
+            display: flex;
+            width: 300px;
+            padding: auto;
+            right: 0px;
+            bottom: 0;
+            position: absolute;
+            background: yellow;
+            align-items: center;
+        }
+        .content{
+            flex: 40%;
+            padding: 10px;
+        }
+        .notification-image{
+            flex-basis: 55%;
+        }
+        .notification-image img{
+            width: 218px;
+        }
+        .content a{
+            text-decoration: none;
+            color: #000;
+            font-size: 13px;
+            margin: 0 10px;
+        }
+        .content p{
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="link">
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>RECIPE</li></a>
+                </ul>
+                <button type="button" class="btn">SIGN UP</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1 class="head">Food <span> Dosen't have a religion.</span> It is a religion</h1>
+            <button class="btn1">EXPLORE</button>
+        </div>
+        <div class="verticalvar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="content">
+                <small>Subscribe Easy Tutorial YouTube channel and never miss any new videos.</small>
+                <p><a href="#">PREV</a><a href="">NEXT</a></p>
+            </div>
+            <div class="notification-image">
+                <img src="burger.jfif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
